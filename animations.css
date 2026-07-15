@@ -1,0 +1,388 @@
+/* =====================================
+   LUMINA ANIMATIONS
+===================================== */
+
+
+/* Scene Fade */
+
+.scene{
+
+animation:fadeIn 1.5s ease;
+
+}
+
+
+@keyframes fadeIn{
+
+from{
+
+opacity:0;
+
+transform:translateY(20px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+
+
+
+
+/* Gift Glow */
+
+.gift{
+
+animation:
+
+giftFloat 3s infinite ease-in-out;
+
+}
+
+
+@keyframes giftFloat{
+
+0%,100%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-15px);
+
+}
+
+}
+
+
+
+
+
+/* Gift Opening */
+
+.opening .gift-box{
+
+animation:
+
+giftOpen 1.2s forwards;
+
+}
+
+
+@keyframes giftOpen{
+
+to{
+
+transform:scale(1.1);
+
+opacity:0;
+
+}
+
+}
+
+
+
+
+
+/* Birthday Text */
+
+.typewriter{
+
+overflow:hidden;
+
+border-right:3px solid white;
+
+white-space:nowrap;
+
+animation:
+
+typing 3s steps(40),
+blink .8s infinite;
+
+}
+
+
+
+@keyframes typing{
+
+from{
+
+width:0;
+
+}
+
+to{
+
+width:100%;
+
+}
+
+}
+
+
+@keyframes blink{
+
+50%{
+
+border-color:transparent;
+
+}
+
+}
+
+
+
+
+
+/* Memory Zoom */
+
+.memoryZoom{
+
+animation:
+
+zoomMemory 5s linear forwards;
+
+}
+
+
+
+@keyframes zoomMemory{
+
+
+from{
+
+transform:scale(1);
+
+}
+
+
+to{
+
+transform:scale(1.12);
+
+}
+
+
+}
+
+
+
+
+
+/* Letter Reveal */
+
+.letterShow{
+
+animation:
+
+letterReveal 1.5s ease;
+
+}
+
+
+
+@keyframes letterReveal{
+
+from{
+
+opacity:0;
+
+transform:
+
+translateY(50px)
+
+scale(.8);
+
+}
+
+
+to{
+
+opacity:1;
+
+transform:
+
+translateY(0)
+
+scale(1);
+
+}
+
+}
+
+
+
+
+
+/* Soft Glow */
+
+.glow{
+
+animation:
+
+softGlow 2s infinite alternate;
+
+}
+
+
+
+@keyframes softGlow{
+
+
+from{
+
+filter:
+
+drop-shadow(
+0 0 5px white
+);
+
+}
+
+
+to{
+
+filter:
+
+drop-shadow(
+0 0 25px white
+);
+
+}
+
+
+}
+
+
+
+
+
+/* Floating Effect */
+
+.float{
+
+animation:
+
+float 4s infinite ease-in-out;
+
+}
+
+
+
+@keyframes float{
+
+50%{
+
+transform:
+
+translateY(-20px);
+
+}
+
+}
+
+
+
+
+
+/* Fade Out */
+
+.fadeOut{
+
+animation:
+
+fadeOut 1s forwards;
+
+}
+
+
+
+@keyframes fadeOut{
+
+
+to{
+
+opacity:0;
+
+visibility:hidden;
+
+}
+
+
+}
+
+@keyframes fromLeft {
+    from {
+        transform: translateX(-100vw) scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0) scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes fromRight {
+    from {
+        transform: translateX(100vw) scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0) scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes fromTop {
+    from {
+        transform: translateY(-100vh) scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes fromBottom {
+    from {
+        transform: translateY(100vh) scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.2);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes rotateIn {
+    from {
+        transform: rotate(-180deg) scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: rotate(0deg) scale(1);
+        opacity: 1;
+    }
+}

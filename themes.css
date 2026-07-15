@@ -1,0 +1,127 @@
+/* =====================================
+   LUMINA THEME SYSTEM
+===================================== */
+
+
+/* GALAXY 🌌 */
+
+.theme-galaxy{
+
+background:
+
+radial-gradient(circle at top,#5b21b6,#090014);
+
+}
+
+
+
+/* SAKURA 🌸 */
+
+.theme-sakura{
+
+background:
+
+linear-gradient(
+135deg,
+#ffd6e8,
+#ff8fab
+);
+
+color:#4a1830;
+
+}
+
+
+
+/* LUXURY 🤍 */
+
+.theme-luxury{
+
+background:
+
+linear-gradient(
+135deg,
+#1a1a1a,
+#b89b5e
+);
+
+}
+
+
+
+/* OCEAN 🌊 */
+
+.theme-ocean{
+
+background:
+
+linear-gradient(
+135deg,
+#023e8a,
+#a8dadc
+);
+
+}
+
+
+
+/* ROSE 🌹 */
+
+.theme-rose{
+
+background:
+
+linear-gradient(
+135deg,
+#800f2f,
+#ff758f
+);
+
+}
+
+
+
+/* LAVENDER 💜 */
+
+.theme-lavender{
+
+background:
+
+linear-gradient(
+135deg,
+#6d5dfc,
+#c8b6ff
+);
+
+}
+
+
+
+/* MIDNIGHT ⚫ */
+
+.theme-midnight{
+
+background:
+
+linear-gradient(
+135deg,
+#000000,
+#171717
+);
+
+}
+
+
+
+
+
+/* Smooth theme transition */
+
+body{
+
+transition:
+
+background 1.5s ease,
+color 1.5s ease;
+
+}

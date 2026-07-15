@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Lumina ✨</title>
+
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/themes.css">
+<link rel="stylesheet" href="assets/css/animations.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+
+<!-- Loading Screen -->
+
+<div id="loading">
+
+<div class="loader">
+
+<h2>Loading Memories...</h2>
+
+<div class="loading-bar">
+
+<div id="loadingProgress"></div>
+
+</div>
+
+<p id="loadingText">
+Collecting beautiful moments...
+</p>
+
+</div>
+
+</div>
+
+
+
+<!-- Background Effects -->
+
+<div id="particles"></div>
+
+
+
+<!-- Gift Scene -->
+
+<section id="giftScene" class="scene hidden">
+
+
+<div class="gift">
+
+<div class="gift-lid"></div>
+
+<div class="gift-box"></div>
+
+</div>
+
+
+<h2>
+A special gift is waiting for you...
+</h2>
+
+
+<button id="openGift">
+Open Gift 🎁
+</button>
+
+
+</section>
+
+
+
+
+
+<!-- Birthday Scene -->
+
+<section id="birthdayScene" class="scene hidden">
+
+
+<h1 id="birthdayTitle">
+Happy Birthday!
+</h1>
+
+
+<h2 id="personName">
+Beautiful Soul ❤️
+</h2>
+
+
+<p id="birthdayWish">
+
+</p>
+
+
+</section>
+
+
+
+
+
+<!-- Memory Movie -->
+
+<section id="memoryScene" class="scene hidden">
+
+
+<h2 class="memoryTitle">
+
+Let's relive some beautiful memories...
+
+</h2>
+
+
+<div id="memoryFrame">
+
+<img id="memoryImage">
+
+</div>
+<button id="memoryNextBtn" class="nextBtn">
+    Next ➜
+</button>
+</section>
+
+
+
+
+
+<!-- Letter Scene -->
+
+<section id="letterScene" class="scene hidden">
+
+
+<div class="envelope">
+
+💌
+
+</div>
+
+
+<div id="letterPaper">
+
+
+<h2>
+For You ❤️
+</h2>
+
+
+<p id="letterText">
+
+</p>
+
+
+</div>
+
+<button id="letterNextBtn" class="nextBtn">
+    Next ➜
+</button>
+
+</section>
+
+
+
+
+
+
+<!-- Final Scene -->
+
+<section id="finalScene" class="scene hidden">
+
+
+<h1>
+Thank You ❤️
+</h1>
+
+
+<p id="finalMessage">
+
+</p>
+
+
+<p id="signature">
+
+</p>
+
+
+<button onclick="location.reload()">
+
+Replay ✨
+
+</button>
+
+
+</section>
+
+
+
+
+
+<audio id="music" loop>
+
+<source src="assets/music/Tenu Sang Rakhna.mp3">
+
+</audio>
+
+
+
+
+<script src="config.js"></script>
+
+<script src="assets/js/music.js"></script>
+
+<script src="assets/js/app.js"></script>
+
+<script src="assets/js/memorymovie.js"></script>
+
+<script src="assets/js/effects.js"></script>
+
+</body>
+
+</html>

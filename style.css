@@ -1,0 +1,592 @@
+/* =====================================
+   LUMINA MAIN STYLE
+===================================== */
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+body{
+
+    width:100%;
+    min-height:100vh;
+
+    overflow:hidden;
+
+    font-family:'Poppins',sans-serif;
+
+    background:#080810;
+
+    color:white;
+
+}
+
+
+
+/* COMMON */
+
+.hidden{
+
+    display:none !important;
+
+}
+
+
+.scene{
+
+    width:100%;
+    height:100vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:25px;
+
+}
+
+
+
+/* LOADING */
+
+#loading{
+
+    position:fixed;
+
+    inset:0;
+
+    background:#080810;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:9999;
+
+}
+
+
+
+.loader{
+
+    width:85%;
+
+    max-width:400px;
+
+    padding:35px;
+
+    border-radius:25px;
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(20px);
+
+}
+
+
+
+.loader h2{
+
+    font-family:'Great Vibes',cursive;
+
+    font-size:45px;
+
+    margin-bottom:25px;
+
+}
+
+
+
+.loading-bar{
+
+    height:8px;
+
+    background:rgba(255,255,255,.2);
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+}
+
+
+
+#loadingProgress{
+
+    width:0%;
+
+    height:100%;
+
+    background:linear-gradient(
+    90deg,
+    #ff4ec7,
+    #8b5cf6
+    );
+
+    transition:.4s;
+
+}
+
+
+
+#loadingText{
+
+    margin-top:20px;
+
+    opacity:.8;
+
+}
+
+
+
+
+
+/* GIFT */
+
+.gift{
+
+    width:200px;
+
+    height:170px;
+
+    position:relative;
+
+    margin-bottom:40px;
+
+}
+
+
+
+.gift-box{
+
+    position:absolute;
+
+    bottom:0;
+
+    width:200px;
+
+    height:130px;
+
+    background:#ff4ec7;
+
+    border-radius:15px;
+
+}
+
+
+
+.gift-lid{
+
+    position:absolute;
+
+    top:0;
+
+    width:200px;
+
+    height:45px;
+
+    background:#ff8ad9;
+
+    border-radius:15px;
+
+    transform-origin:left;
+
+    transition:1s;
+
+}
+
+
+
+.gift.open .gift-lid{
+
+    transform:
+
+    translateY(-80px)
+
+    rotate(-20deg);
+
+}
+
+
+
+
+
+/* TEXT */
+
+h1{
+
+    font-family:'Great Vibes',cursive;
+
+    font-size:70px;
+
+}
+
+
+
+h2{
+    font-family: 'Great Vibes', cursive;
+    font-size:55px;
+    margin:20px 0;
+
+}
+
+
+
+p{
+
+    max-width:700px;
+
+    line-height:1.8;
+
+    font-size:18px;
+
+}
+
+
+
+
+
+/* BUTTON */
+
+button{
+
+    margin-top:30px;
+
+    padding:16px 40px;
+
+    border:none;
+
+    border-radius:50px;
+
+    cursor:pointer;
+
+    color:white;
+
+    font-size:17px;
+
+    background:
+
+    linear-gradient(
+    135deg,
+    #ff4ec7,
+    #8b5cf6
+    );
+
+    transition:.4s;
+
+}
+
+
+
+button:hover{
+
+    transform:scale(1.05);
+
+}
+
+
+
+
+
+/* MEMORY MOVIE */
+
+#memoryFrame{
+
+    width:min(90vw,800px);
+
+    height:min(65vh,500px);
+
+    overflow:hidden;
+
+    border-radius:25px;
+
+    box-shadow:
+
+    0 0 60px rgba(255,255,255,.25);
+
+}
+
+
+
+#memoryImage{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    transition:1.2s;
+
+}
+
+
+
+
+
+/* LETTER */
+
+.envelope{
+
+    font-size:100px;
+
+    cursor:pointer;
+
+}
+
+
+
+#letterPaper{
+
+    display:none;
+
+    max-width:700px;
+
+    margin-top:30px;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    background:#fff8ef;
+
+    color:#333;
+
+    animation:paperOpen 1s;
+
+}
+
+
+
+@keyframes paperOpen{
+
+from{
+
+    transform:scale(.5);
+
+    opacity:0;
+
+}
+
+to{
+
+    transform:scale(1);
+
+    opacity:1;
+
+}
+
+}
+
+
+
+
+
+/* PARTICLES */
+
+#particles{
+
+    position:fixed;
+
+    inset:0;
+
+    pointer-events:none;
+
+}
+
+
+
+
+
+/* MOBILE */
+
+@media(max-width:700px){
+
+
+h1{
+
+font-size:45px;
+
+}
+
+
+.loader h2{
+
+font-size:35px;
+
+}
+
+
+#memoryFrame{
+
+height:55vh;
+
+}
+
+
+}
+/* =====================================
+   EFFECT STYLES
+===================================== */
+
+
+.floating-heart{
+
+position:fixed;
+
+bottom:-50px;
+
+font-size:25px;
+
+pointer-events:none;
+
+animation:
+heartFloat linear forwards;
+
+z-index:5;
+
+}
+
+
+
+@keyframes heartFloat{
+
+to{
+
+transform:
+translateY(-120vh)
+rotate(360deg);
+
+opacity:0;
+
+}
+
+}
+
+
+
+
+
+.sparkle{
+
+position:fixed;
+
+width:6px;
+
+height:6px;
+
+background:white;
+
+border-radius:50%;
+
+box-shadow:
+0 0 20px white;
+
+animation:
+sparkleFade 2.5s forwards;
+
+z-index:5;
+
+}
+
+
+
+@keyframes sparkleFade{
+
+0%{
+
+transform:scale(0);
+
+opacity:0;
+
+}
+
+50%{
+
+opacity:1;
+
+}
+
+100%{
+
+transform:scale(1.8);
+
+opacity:0;
+
+}
+
+}
+
+
+
+
+
+.balloon{
+
+position:fixed;
+
+bottom:-100px;
+
+width:45px;
+
+height:60px;
+
+background:#ff4ec7;
+
+border-radius:50%;
+
+animation:
+balloonUp 12s linear forwards;
+
+z-index:3;
+
+}
+
+
+
+@keyframes balloonUp{
+
+to{
+
+transform:
+translateY(-130vh);
+
+}
+
+}
+
+
+
+
+
+.firework{
+
+position:fixed;
+
+width:10px;
+
+height:10px;
+
+border-radius:50%;
+
+background:#fff;
+
+z-index:10;
+
+}
+
+.nextBtn{
+    display: none;
+}
